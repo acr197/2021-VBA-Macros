@@ -2,9 +2,9 @@
 Refreshing my 2021 VBA macro that I built pre-GPT that benefitted greatly from an AI refresh. Always looking to improve legacy processes 👍
 
 ## Overview  
-This toolkit is a compilation of simple tools (at least the macros without sensitive details specialized for clients) for many QA and reporting tasks across media operations.
+This toolkit is a rebuilt compilation of simple tools (at least the macros without sensitive details specialized for clients) that I made at home that was used for many QA and reporting tasks across media operations.
 
-This sheet builds on VBA I originally learned through StackOverflow, MrExcel, and VBAExpress. With that foundation and GenAI, I rebuilt a cleaner, more dynamic version in under an hour - something that would’ve taken weeks manually.
+This sheet builds on VBA I originally learned through StackOverflow, MrExcel, and VBAExpress. With that foundation and GenAI, I rebuilt a cleaner, more dynamic version in under an hour - something that used to take weeks manually to learn, build, test, and deploy now took me under an hour with my knowledge of coding logic and prompt engineering.
 
 This is one of my favorite examples of AI-assisted coding: a simple VBA tool that saves teams hours on repetitive, tedious tasks while improving standardization across files, QA, and naming. It's a toolkit thats not about replacing people - it’s about delegating the annoying parts to the robots so humans can focus on strategy and insights.
 
@@ -58,4 +58,5 @@ Replaces “~~” in selected ranges to simplify super-common lookup placeholder
 ## Notes  
 - Built manually before LLMs and later refined with AI assistants  
 - Saves the team many hours of tedious work each month  
-- Demonstrates AI as an assistant to augment human capabilities, not replace jobs  
+- Demonstrates AI as an assistant to augment human capabilities, not replace jobs
+- This is not the original code used at my place of employment as the company owns that. This was re-written from scratch as a demo of GenAI on my personal time to display in a compliant manner.
