@@ -1,8 +1,11 @@
 # Excel VBA Automation: Placement & Creative QA Toolkit
+Refreshing my 2021 VBA macro that I built pre-GPT that benefitted greatly from an AI refresh. Always looking to improve legacy processes 👍
 
 ## Overview  
-This toolkit is a compilation of simple tools (and compliant to share) for many QA and reporting tasks across media operations.
+This toolkit is a compilation of simple tools (at least the macros without sensitive details specialized for clients) for many QA and reporting tasks across media operations.
+
 This sheet builds on VBA I originally learned through StackOverflow, MrExcel, and VBAExpress. With that foundation and GenAI, I rebuilt a cleaner, more dynamic version in under an hour - something that would’ve taken weeks manually.
+
 This is one of my favorite examples of AI-assisted coding: a simple VBA tool that saves teams hours on repetitive, tedious tasks while improving standardization across files, QA, and naming. It's a toolkit thats not about replacing people - it’s about delegating the annoying parts to the robots so humans can focus on strategy and insights.
 
 ## Tech Used  
