@@ -1,53 +1,58 @@
-# Excel VBA Automation: Pre-Trafficking Validator
+# Excel VBA Automation: Placement & Creative QA Toolkit
 
 ## Overview  
-This VBA script streamlines campaign trafficking setup by automatically checking for common data issues and applying consistent formatting. Built to prevent errors *before* trafficking begins, it reduces rework and accelerates launch readiness.
+This toolkit is a compilation of simple tools (and compliant to share) for many QA and reporting tasks across media operations.
+This sheet builds on VBA I originally learned through StackOverflow, MrExcel, and VBAExpress. With that foundation and GenAI, I rebuilt a cleaner, more dynamic version in under an hour - something that would’ve taken weeks manually.
+This is one of my favorite examples of AI-assisted coding: a simple VBA tool that saves teams hours on repetitive, tedious tasks while improving standardization across files, QA, and naming. It's a toolkit thats not about replacing people - it’s about delegating the annoying parts to the robots so humans can focus on strategy and insights.
 
 ## Tech Used  
-- Excel VBA (self-taught, pre-AI codebase)  
+- Excel VBA (self‑taught pre‑LLM, later AI‑tuned)  
+- FileDialog integration  
+- Dynamic header detection  
 - Conditional formatting  
 - Data validation  
-- Logic-based formatting rules  
-- Auto-format and cleanup routines  
 
 ## How It Works  
-Each run of the macro performs end-to-end prep on a trafficking sheet:  
-- Verifies column headers to catch changes or drift  
-- Clears old formats and resets validation across the grid  
-- Applies conditional formatting to flag:  
-  - Missing or invalid status values  
-  - URLs with spaces or missing protocols  
-  - Expiring placement or asset dates  
-  - Mismatched creative dimensions  
-- Enforces dropdown validation for key fields (Status, Verification, Survey, etc.)  
-- Auto-adjusts column widths and date formats for consistency  
-- Dynamically scales to the size of your data—no hardcoded limits  
+Each macro batch runs via the VBA editor or toolbar buttons to:  
+- Reset Excel defaults after errors  
+- Parse taxonomy strings into structured columns  
+- Merge selected workbooks into a master sheet  
+- Format CSV or SQL exports with styles and freeze pane  
+- Save workbooks to Downloads with timestamped names  
+- Unlock Protected View files for other macros  
+- Remove placeholder tildes in data ranges  
 
 ## Highlighted Functions  
 
-### 1. Pre-Trafficking QA Logic  
-Flags bad URLs, status mismatches, or missing dependencies in key cells before downstream systems touch them.
+### 1. ResetSettings  
+Restores alerts, screen updating, calculation mode, and scrollbars to troubleshoot display or behavior issues.
 
-### 2. Conditional Highlighting for Human Review  
-Colors rows red or orange if logic or data rules are violated (e.g. 1x1 creatives with blocking tags).
+### 2. TaxonomyKeyParse  
+Parses client taxonomy keys (KEY~Value_) into separate columns for each key.
 
-### 3. Self-Healing Formatting  
-Wipes old styles and reapplies structure based on current headers and data range, so the sheet stays clean over time.
+### 3. MergeExcelSheets  
+Prompts file selection and consolidates data from multiple workbooks into one sheet without duplicate headers.
 
-### 4. Input Validation  
-Dropdown lists enforce standard values in cells prone to inconsistency or typos, reducing errors in ad operations.
+### 4. FormatCSV  
+Styles header row with bold fill and center alignment, auto‑fits columns, and freezes the top pane.
 
-### 5. Scalable & Dynamic  
-Works across thousands of rows and any number of URL or dimension columns without manual range updates.
+### 5. QuickSave  
+Saves the active workbook as XLSX in the Downloads folder with a timestamped name or prompts manual save on error.
+
+### 6. UnprotectSheets  
+Opens Protected View workbooks in edit mode so automated routines can run without interruption.
+
+### 7. ReplaceTildes  
+Replaces “~~” in selected ranges to simplify super-common lookup placeholders, ctrl-f, filter searches, and clean up data.
 
 ## Business Value & Use Cases  
-- **Media operations**: speeds up trafficking handoff, improves QA  
-- **Campaign delivery**: reduces human error and launch delays  
-- **Template enforcement**: keeps sheets clean regardless of who last edited  
-- **Data-driven logic**: foundational for downstream automation and system ingestion  
-- **Impact**: helped reduce trafficking errors by nearly 50% and became a standard, positively-reviewed part of every client’s setup process
+- **Time savings**: weeks of manual coding into hours with AI assistance  
+- **Error reduction**: prevents silent failures and enforces standards  
+- **Team efficiency**: non‑technical users run macros via buttons  
+- **Scalability**: handles varying data sizes with no hardcoded ranges  
+- **Human augmentation**: frees employees to focus on strategic work and innovation  
 
 ## Notes  
-- Built independently while learning VBA—no LLMs used during development  
-- Post-build, I've since applied AI (ChatGPT, OpenAI) to accelerate and refine newer scripts  
-- This version remains valuable as proof of process thinking, logic design, and automation enablement
+- Built manually before LLMs and later refined with AI assistants  
+- Saves the team many hours of tedious work each month  
+- Demonstrates AI as an assistant to augment human capabilities, not replace jobs  
